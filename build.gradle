@@ -1,0 +1,16 @@
+group 'de.earley.events'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.3'
+}
