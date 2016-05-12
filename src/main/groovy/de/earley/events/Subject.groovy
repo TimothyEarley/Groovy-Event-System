@@ -1,11 +1,17 @@
 package de.earley.events
 
 /**
+ *
+ * An Observable thing
+ *
  * Created 23/04/16
  * @author Timothy Earley
  */
 class Subject {
 
+	/**
+	 * Each listener gets a list of broadcasts (any type)
+	 */
 	final List<Closure> listeners = []
 
 	private broadcasts = []

@@ -1,6 +1,9 @@
 package de.earley.events
 
 /**
+ *
+ * Holds a List of Subject that can be processed with one call
+ *
  * Created 23/04/16
  * @author Timothy Earley
  */
@@ -8,10 +11,14 @@ class EventSystem {
 
 	private List<Subject> subjects = []
 
-	Subject createSubject(name) {
-		def subject = new Subject()
+	def addSubject(Subject subject) {
 		subjects << subject
-		subject
+	}
+
+	Subject createSubject() {
+		def s = new Subject()
+		addSubject(s)
+		s
 	}
 
 	def process() {
