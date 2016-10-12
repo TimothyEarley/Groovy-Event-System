@@ -21,7 +21,7 @@ class Handler<T extends Event> {
       return p
    }
 
-   static void fire(T task) {
+   static void fire(Event task) {
       tasks << task
    }
 
